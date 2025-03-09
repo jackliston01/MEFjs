@@ -1,0 +1,272 @@
+          body {
+              font-family: Arial, sans-serif;
+              background: #13161c;
+
+          background-attachment: fixed;              
+          margin: 0;
+              padding: 20px;
+              padding-top: 50px;
+          }
+          h1, h2 {
+              color: #f2f2f5;
+          }
+          .content-wrapper {
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+          }
+          .top-info {
+              display: flex;
+              gap: 20px;
+          }
+          .stock-info, .ai-evaluation {
+              flex: 1;
+              width: calc(50% - 10px);
+          }
+          .stock-chart {
+              width: 100%;
+          }
+          .stock-info, .news {
+              background-color: #21252e;
+              padding: 20px;
+              border-radius: 8px;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+          .news {
+              width: 100%;
+          }
+          .price {
+              font-size: 24px;
+              font-weight: bold;
+              color: #f2f2f5;
+          }
+          .info-item {
+              display: flex;
+              justify-content: space-between;
+              background-color: #4c5261;
+              padding: 10px;
+              border-radius: 5px;
+              box-shadow: 0 2px 4px rgba(2, 54, 113, 0.1);
+              margin-bottom: 10px;
+          }
+          .info-label {
+              font-weight: bold;
+              color: #f2f2f5;
+          }
+          .info-value {
+              color: #f2f2f5;
+          }
+          .news-item {
+              margin-bottom: 20px;
+          }
+          .news-item h3 {
+              margin: 0;
+              font-size: 18px;
+              color: #f2f2f5;
+          }
+          .news-item p {
+              margin: 5px 0;
+              color: #f2f2f5;
+          }
+          a {
+              color: #f2f2f5;
+              text-decoration: none;
+          }
+          a:hover {
+              text-decoration: underline;
+          }
+          
+          table, th, td {
+              border: 1px solid #bfc0c0;
+              padding: 8px;
+          }
+          th {
+              background-color: #ffffff;
+              color: #f2f2f5;
+              text-align: left;
+          }
+          td {
+              text-align: right;
+          }
+          p {
+              color: #f2f2f5;
+          }
+          .back-button {
+              display: inline-block;
+              background-color: #ffffff;
+              color: #000000;
+              padding: 10px 20px;
+              text-decoration: none;
+              border-radius: 5px;
+              font-weight: bold;
+              transition: background-color 0.3s ease;
+              margin-top: 20px;
+          }
+
+          .back-button:hover {
+              background-color: #ffffff;
+              text-decoration: none;
+          }
+          header {
+              margin-top: 80px;
+              text-align: center;
+              padding: 2rem 0;
+          }
+
+          header h1 {
+              color: #88b9da;
+              font-size: 48px;
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          }
+          nav {
+            background-color: rgba(10, 10, 10, 0.8);
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+          nav a {
+              color: #f2f2f5;
+              text-decoration: none;
+              padding: 10px 20px;
+              margin: 0 5px;
+              border-radius: 5px;
+              transition: all 0.3s ease;
+              font-weight: bold;
+          }
+
+          nav a:hover, nav a.active {
+              background-color: #02428b;
+              color: #ffffff;
+          }
+           
+
+
+form{
+
+  text-align: center;
+
+
+}
+
+.hamburger {
+  display: none;
+  color: #ffffff;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+@media screen and (max-width: 768px) {
+  
+
+ 
+
+  nav {
+      background-color: rgba(10, 10, 10, 0.8);
+      padding: 15px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+  }
+
+  .hamburger {
+      display: block;
+  }
+
+  .nav-links {
+      display: none;
+  }
+
+  .nav-links.show {
+      display: block;
+  }
+
+  nav a {
+      display: block;
+      padding: 10px 15px;
+      text-align: left;
+  }
+
+  nav a:hover, nav a.active {
+      background-color: #034694;
+  }
+
+  
+}
+
+        .ai-evaluation {
+            width: 65%;
+            background-color: #21252e;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .ai-evaluation h2 {
+            color: #f2f2f5;
+            margin-bottom: 15px;
+        }
+        
+        .ai-evaluation .info-item {
+            background-color: #4c5261;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(2, 54, 113, 0.1);
+        }
+        
+        .ai-evaluation p {
+            color: #f2f2f5;
+            margin: 0;
+        }
+          
+          .bottom-info {
+              display: flex;
+              gap: 20px;
+          }
+          
+          .news {
+              flex: 2;
+          }
+          
+          .sentiment-box {
+              flex: 1;
+              background-color: #21252e;
+              padding: 20px;
+              border-radius: 8px;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+          }
+          
+          .sentiment-box h3 {
+              color: #f2f2f5;
+              margin-bottom: 10px;
+          }
+          
+          .sentiment-button {
+              display: inline-block;
+              background-color: #f2f2f5;
+              color: #000000;
+              padding: 10px 20px;
+              border-radius: 5px;
+              text-decoration: none;
+              margin-top: 15px;
+              transition: background-color 0.3s ease;
+          }
+          
+          .sentiment-button:hover {
+              background-color: #e9e9f0;
+          }
+          

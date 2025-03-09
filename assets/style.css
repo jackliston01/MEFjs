@@ -1,0 +1,184 @@
+          body {
+              font-family: Arial, sans-serif;
+              background: #21252e;
+
+                  
+              background-attachment: fixed;
+              margin: 0;
+              padding: 0;
+              height: 100vh;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              min-height: 100vh;
+          }
+          h1 {
+              color: #f2f2f5;
+              margin-top: 20px;
+              text-align: center;
+          }
+          form {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 100%;
+              max-width: 400px;
+          }
+          input[type="text"], button {
+              width: 100%;
+              margin: 10px 0;
+              padding: 10px;
+              font-size: 16px;
+          }
+          input[type="text"] {
+              background-color: rgba(255, 255, 255, 0.1);
+              border: none;
+              border-bottom: 2px solid #f2f2f5;
+              color: #fff;
+              transition: all 0.3s ease;
+          }
+          input[type="text"]:focus {
+              background-color: rgba(255, 255, 255, 0.2);
+              outline: none;
+          }
+          button {
+              border-radius: 5%;
+              background-color: #02428b;
+              color: #ffffff;
+              font-weight: bold;
+              transition: all 0.3s ease;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+              border: none;
+              cursor: pointer;
+          }
+          button:hover {
+              background-color: #0c5ab3;
+              transform: translateY(-2px);
+              box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+          }
+          #main-title {
+              font-size: 72px;
+              color: #f2f2f5;
+              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+              margin-bottom: 20px;
+          }
+
+          h1:not(#main-title) {
+              font-size: 24px;
+              color: #f2f2f5;
+              margin-bottom: 20px;
+          }
+          nav {
+              background-color: rgba(10, 10, 10, 0.8);
+              padding: 15px 0;
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              z-index: 1000;
+              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+              backdrop-filter: blur(10px);
+          }
+            nav a {
+                color: #f2f2f5;
+                text-decoration: none;
+                padding: 10px 20px;
+                margin: 0 5px;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+                font-weight: bold;
+            }
+
+            nav a:hover, nav a.active {
+                background-color: #02428b;
+                color: #ffffff;
+            }
+             
+
+
+form{
+
+    text-align: center;
+
+
+}
+
+.hamburger {
+    display: none;
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    #main-title {
+        font-size: 48px;
+    }
+
+    h1:not(#main-title) {
+        font-size: 20px;
+    }
+
+    nav {
+        background-color: rgba(10, 10, 10, 0.8);
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.show {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px 15px;
+        text-align: left;
+    }
+
+    nav a:hover, nav a.active {
+        background-color: #034694;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+.example-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.example-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.example-btn:hover {
+    background-color: #45a049;
+}

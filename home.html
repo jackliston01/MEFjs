@@ -1,0 +1,44 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOB 2.0 - LBHS</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+
+</head>
+<body>
+    <nav>
+        <div class="hamburger">&#9776;</div>
+        <div class="nav-links">
+            <a href="home.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="docanalysis.html" class="nav-link">Doc Analyzer</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="sentiment.html" class="nav-link">Sentiment</a>
+        </div>
+    </nav>
+
+    <h1 id="main-title">MEF Analysis Engine</h1>
+    <h1>"The Best in the Game"</h1>
+    <form method="post">
+        <input type="text" name="ticker" placeholder="Enter Stock Ticker" required>
+        <button type="submit">Get Stock Info</button>
+    </form>
+
+    <!-- New example buttons section -->
+    <div class="example-buttons">
+        <form method="post" style="display: inline;">
+            <input type="hidden" name="ticker" value="AAPL">
+            <button type="submit" class="example-btn">Try AAPL (Apple)</button>
+        </form>
+        
+    </div>
+    <script src="/assets/home.js"></script>
+    
+</body>
+</html>

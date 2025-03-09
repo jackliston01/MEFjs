@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GOB 2.0 LBHS</title>
+    <link rel="stylesheet" href="assets/style2.css">
+    <script type="text/javascript">
+        var submitted = false;
+
+        function showConfirmation() {
+            document.getElementById('confirmation-message').style.display = 'block';
+            document.getElementById('contact-form').style.display = 'none';
+
+
+
+}
+    
+    </script>
+   
+</head>
+<body class="contact-page">
+    <div class="page-container">
+
+
+        <nav>
+            <div class="hamburger">&#9776;</div>
+            <div class="nav-links">
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="docanalysis.html" class="nav-link">Doc Analyzer</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="sentiment.html" class="nav-link">Sentiment</a>
+            </div>
+        </nav>
+    
+   
+
+    <section class="contact-container">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Have any questions or just want to reach out? Please email us and we'll get back to you as quickly as possible</p>
+            <ul>
+                <li><strong>Email:</strong> myequityfinder@gmail.com</li>
+                <li><strong>Phone Number:</strong> (323) 961-3030</li>
+                <li><strong>Address:</strong> 625 Park St. Laguna Beach, CA 92651</li>
+            </ul>
+        </div>
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <div id="confirmation-message">
+                <h3>Thank you for your message!</h3>
+                <p>We have received your inquiry and will get back to you soon.</p>
+            </div>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {showConfirmation();}"></iframe>
+            <form id="contact-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeSzWUX-EPgYeK40our3badeI5Xxys48aK5v039NXFlvSD67Q/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                <label>Name</label>
+                <input name="entry.1468034956" type="text" placeholder="Name" required />
+                <br>
+                <label>Email</label>
+                <input name="entry.2079602894" type="email" placeholder="Email" required />
+                <br>
+                <label>Message</label>
+                <input name="entry.1869904114" type="text" placeholder="Message" required />
+                <br>
+                <input type="submit" value="Send" />
+            </form>
+        </div>
+    </section>
+
+</div>
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var hamburger = document.querySelector('.hamburger');
+        var navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', function() {
+            navLinks.classList.toggle('show');
+        });
+    });
+</script>
+</html>
+
+
